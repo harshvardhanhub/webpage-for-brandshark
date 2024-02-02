@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandshark</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Brandshark</h1>
+    </header>
+<nav>
+    <a href="#services" data-target="services">Services</a>
+    <a href="#about-us" data-target="about-us">About</a>
+    <a href="#clients" data-target="clients">Clients</a>
+    <a href="#get-in-touch" data-target="get-in-touch">Get In Touch</a>
+    <a href="#contact" data-target="contact">Contact</a>
+    <a href="#get-in-touch" data-target="discuss-project">Discuss Your Project</a>
+</nav>
+
+    
+    <section id="headline">
+        <img src="Images/banner-animated.svg" alt="Banner Image">
+        <h2>Innovate | Design | Create</h2>
+        <p>As a leading global digital marketing company, we believe that your digital footprint should be as unique
+            as the customers using them. We readily embrace this challenge, guiding both start-ups and established
+            businesses with our expertise.</p>
+            <a href="#services" class="learn-more-btn">Learn More</a>
+    </section>
+
+    <section id="clients">
+        <h3>Clients We Work With</h3>
+        <div id="client-container">
+            <div class="client">
+                <img src="Images/QuizBee.svg" alt="Client 1 Logo">
+            </div>
+            <div class="client">
+                <img src="Images/prestige-logo-C58DC32DC3-seeklogo.webp" alt="Client 2 Logo">
+            </div>
+            <div class="client">
+                <img src="Images/pantaloons-logo-1.webp" alt="Client 3 Logo">
+            </div>
+            <div class="client">
+                <img src="Images/goldenpisvg.svg" alt="Client 4 Logo">
+            </div>
+            <div class="client">
+                <img src="Images/aubree-1.svg" alt="Client 5 Logo">
+            </div>
+            <div class="client">
+                <img src="Images/edchemy.webp" alt="Client 6 Logo">
+            </div>
+            <div class="client">
+                <img src="Images/Orchids.webp" alt="Client 7 Logo">
+            </div>
+            <div class="client">
+                <img src="Images/prestige-logo-C58DC32DC3-seeklogo.webp" alt="Client 8 Logo">
+            </div>
+            <div class="client">
+                <img src="Images/The-times-group.jpg" alt="Client 9 Logo">
+            </div>
+            <div class="client">
+                <img src="Images/First-credit.svg" alt="Client 10 Logo">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h3>SERVICES</h3>
+        <h>Check Out Our Specialized Services</h>
+
+        <div id="service-banners">
+            <img src="Images/service1.webp" alt="Services Banner Image" class="service-banner">
+            <img src="Images/service2.webp" alt="Services Banner Image" class="service-banner">
+        </div>
+
+        <div id="service-tabs">
+            <div class="service-tab" onclick="showService(1)">Website Development</div>
+            <div class="service-tab" onclick="showService(2)">UI/UX</div>
+            <div class="service-tab" onclick="showService(3)">Digital Marketing</div>
+            <div class="service-tab" onclick="showService(4)">Branding and Corporate Identity</div>
+        </div>
+
+        <div id="service-content-container">
+            <div id="service-1" class="service-info">
+                <img src="Images/web-development.webp" alt="Website Development Image">
+                <div class="text">
+                    <h4>Website Development</h4>
+                    <p>We combine intelligent architecture and web-friendly practices to create interactive websites.
+                        <span class="read-more" onclick="redirectToExternalSite('YOUR_EXTERNAL_URL')">Read More</span>
+                        <span id="extra-info-1" class="extra-info" style="display: none;">Additional information about
+                            website development.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="service-2" class="service-info">
+                <img src="Images/ui-ux.webp" alt="UI/UX Image">
+                <div class="text">
+                    <h4>UI/UX Design</h4>
+                    <p>We craft beautiful and engaging user interactions that lead to higher engagement.
+                        <span class="read-more" onclick="redirectToExternalSite('YOUR_EXTERNAL_URL')">Read More</span>
+                        <span id="extra-info-2" class="extra-info" style="display: none;">Additional information about
+                            UI/UX design.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="service-3" class="service-info">
+                <img src="Images/branding.webp" alt="Branding and Corporate Identity Image">
+                <div class="text">
+                    <h4>Branding and Corporate Identity</h4>
+                    <p>From Brand strategy to logo design, we help you transform into a memorable brand.
+                        <span class="read-more" onclick="redirectToExternalSite('YOUR_EXTERNAL_URL')">Read More</span>
+                        <span id="extra-info-3" class="extra-info" style="display: none;">Additional information about
+                            branding and corporate identity.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="service-4" class="service-info">
+                <img src="Images/digital-marketing.webp" alt="Digital Marketing Image">
+                <div class="text">
+                    <h4>Digital Marketing</h4>
+                    <p>We strategize and execute conversion-optimized digital marketing strategies that deliver the
+                        highest business growth.
+                        <span class="read-more" onclick="redirectToExternalSite('YOUR_EXTERNAL_URL')">Read More</span>
+                        <span id="extra-info-4" class="extra-info" style="display: none;">Additional information about
+                            digital marketing.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <h3>About Us</h3>
+        <div class="about-content">
+            <img src="Images/about_min.webp" alt="About Us Banner Image">
+            <div class="text">
+                <h4>Why Choose Us?</h4>
+                <p>Brandshark is a leading digital marketing and website development company. Our creative team of
+                    website developers, UI/UX designers, and digital marketers pushes boundaries with smart solutions.
+                    Awarded the prestigious Google Partner badge, we have a proven track record of providing excellent
+                    digital marketing services for over 200 happy customers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h3>Latest Blog Posts</h3>
+        <div class="blog-tabs">
+            <div class="blog-tab" onclick="showBlog(1)">5 Ways To Maximize ROI Through Ecommerce Search Optimization Techniques</div>
+            <div class="blog-tab" onclick="showBlog(2)">Important content writing guidelines to follow for an excellent brand voice</div>
+            <div class="blog-tab" onclick="showBlog(3)">5 Common Pitfalls To Avoid In Your Landing Page Design And Optimization</div>
+        </div>
+        <div id="blog-content-container">
+            <div id="blog-1" class="blog-post">
+                <img src="Images/Getstocked-Feature-image-55-980x551.jpg" alt="Blog 1 Image">
+                <div class="text">
+                    <h4></h4>
+                    <a href="https://brandshark.com/strategies-for-optimizing-ecommerce-search-optimization/" target="_blank" class="read-more-link">Read More</a>
+                </div>
+            </div>
+    
+            <div id="blog-2" class="blog-post">
+                <img src="Images/content-writing-guidelines-980x560.jpg" alt="Blog 2 Image">
+                <div class="text">
+                    <h4></h4>
+                    <a href="https://brandshark.com/important-content-writing-guidelines-to-follow-for-an-excellent-brand-voice/" target="_blank" class="read-more-link">Read More</a>
+                </div>
+            </div>
+    
+            <div id="blog-3" class="blog-post">
+                <img src="Images/Getstocked-Feature-image-54-980x551.jpg" alt="Blog 3 Image">
+                <div class="text">
+                    <h4></h4>
+                    <a href="https://brandshark.com/sidestep-pitfalls-in-landing-page-design-and-optimization/" target="_blank" class="read-more-link">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="get-in-touch">
+        <h3>Get In Touch With Us</h3>
+        <p>Our digital marketing team is always ready to help. Give us a call, drop us an email, or just fill in the form below to instantly schedule a call with us.</p>
+        <img src="Images/get-in-touchmin.webp" alt="About Us Banner Image">
+        
+        <form action="your-form-processing-script.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+
+
+    <section id="contact">
+        <h3>Contact Us</h3>
+        <p>
+            📞 +1 201 713 1850 (US)<br>
+            📞 +91 782 711 3855 (India)<br>
+            ✉ design@brandshark.com
+        </p>
+        <p>
+            📍 H-210, HustleHub Technology Park,<br>
+            27th Main Rd, Sector 2, HSR Layout, Bengaluru, Karnataka 560102, India
+        </p>
+        <p>
+            📍 Arbor Creek Drive, Henrico, Virginia 23233
+        </p>
+    </section>
+
+    <section id="services-details">
+        <h4>Website Development</h4>
+        <ul>
+            <li>Start an E-Commerce company</li>
+            <li>Website design company in Bangalore</li>
+            <li>Corporate Websites</li>
+        </ul>
+
+        <h4>UI/UX</h4>
+        <ul>
+            <li>User Research</li>
+            <li>Wireframe</li>
+            <li>Visual Design</li>
+            <li>User Testing</li>
+        </ul>
+
+        <h4>Branding Identity</h4>
+        <ul>
+            <li>Logo Design</li>
+            <li>Brand Strategy</li>
+            <li>Product photography in Bangalore</li>
+            <li>Commercial video production in Bangalore</li>
+            <li>Photography portfolio</li>
+            <li>Real estate photography in Bangalore</li>
+        </ul>
+
+        <h4>Digital Marketing</h4>
+        <ul>
+            <li>Search Engine Optimization</li>
+            <li>Social Media Marketing</li>
+            <li>Learn digital marketing online</li>
+            <li>Advertisement Management</li>
+            <li>Case studies</li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2024 Brandshark. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
